@@ -17,3 +17,13 @@ def test_calculate_average_salary():
     test = 60166.667
     result = employee_info.calculate_average_salary()
     assert(result==test)
+
+def test_get_employees_by_department():
+    result = []
+    input = "Sales"
+    test = [
+        {"name": "John", "age": 30, "department": "Sales", "salary": 50000},
+        {"name": "Peter", "age": 40, "department": "Sales", "salary": 60000}
+    ]
+    result = employee_info.get_employees_by_dept(input)
+    assert(result == test)
