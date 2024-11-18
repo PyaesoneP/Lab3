@@ -24,10 +24,10 @@ def calculate_average_salary():
 
     #add your implementation to calculate here
     for item in employee_data:
-        total += item["salary"]
+        total += int(item["salary"])
     
     average = total / len(employee_data)
-    return average
+    return round(average, 3)
 
 def get_employees_by_dept(department):
     result = []
